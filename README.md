@@ -40,6 +40,28 @@ groq_api_key=TU_API_KEY_AQUÍ
 
 ---
 
+## 📚 Requisitos de instalación
+
+El archivo `requirements.txt` contiene todas las dependencias necesarias para ejecutar la aplicación. Esto garantiza que todos los paquetes y versiones requeridas se instalen correctamente.
+
+### Contenido del archivo `requirements.txt`:
+```plaintext
+streamlit==X.X.X
+python-dotenv==X.X.X
+groq==X.X.X
+```
+(Sustituye `X.X.X` con las versiones actuales de los paquetes)
+
+### Instalación de las dependencias:
+Para instalar las dependencias del proyecto, ejecuta el siguiente comando:
+```bash
+pip install -r requirements.txt
+```
+
+Esto descargará e instalará automáticamente todas las bibliotecas especificadas en el archivo `requirements.txt`.
+
+---
+
 ## 🖥️ ¿Cómo funciona la aplicación?
 
 1. **Ejecución en Codespaces**:
@@ -67,16 +89,6 @@ Este proyecto tiene como finalidad:
 
 ---
 
-## 📚 Requisitos de instalación
-
-Para ejecutar esta aplicación localmente, asegúrate de tener las siguientes dependencias:
-
-```bash
-pip install streamlit python-dotenv groq
-```
-
----
-
 ## 📂 Estructura del Proyecto
 
 ```
@@ -85,7 +97,8 @@ pip install streamlit python-dotenv groq
  ┣ 📜 .gitignore        # Archivos a excluir del control de versiones
  ┣ 📜 LICENSE           # Licencia del proyecto
  ┣ 📜 app.py            # Archivo principal de la aplicación
- ┗ 📜 README.md         # Archivo de documentación
+ ┣ 📜 README.md         # Archivo de documentación
+ ┗ 📜 requirements.txt  # Dependencias del proyecto
 ```
 
 ---
