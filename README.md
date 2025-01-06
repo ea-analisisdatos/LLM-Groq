@@ -4,6 +4,14 @@
 
 ---
 
+## 🌟 Captura de Pantalla
+
+<p align="center">
+  <img src="./Captura-Chat-con-LLM-de-Groq.PNG" alt="Captura del Chatbot con LLM de Groq" width="500px">
+</p>
+
+---
+
 ## 🛠️ Tecnologías utilizadas:
 
 - **Groq**: Plataforma de IA avanzada con modelos como `Mixtral` y `Llama 3`, que permiten generar respuestas de manera eficiente y precisa. 🌐

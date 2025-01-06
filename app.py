@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 groq_api_key = os.getenv("groq_api_key")
 
-st.sidebar.title("Personalization")
-prompt = st.sidebar.title("System Prompt: ")
+st.sidebar.title("🛠️ **Personalización**")
+prompt = st.sidebar.title("Modelos: ")
 model = st.sidebar.selectbox(
     'Choose a model', ['Llama3-8b-8192', 'Llama3-70b-8192', 'Mixtral-8x7b-32768']
 )
@@ -16,15 +16,15 @@ model = st.sidebar.selectbox(
 client = Groq(api_key = groq_api_key)
 
 # Streamlit Interface
-st.title("💬 Chat with Groq's LLM")
+st.title("💬 Chat con LLM de Groq")
 
 # Initialize sessesion state for history
 if "history" not in st.session_state:
     st.session_state.history = []
 
-user_input = st.text_input("Enter your query: ", "")
+user_input = st.text_input("**Ingresa tu consulta**: ", "")
 
-if st.button("Submit"):
+if st.button("Enviar"):
     chat_completion = client.chat.completions.create(
         messages=[
             {
@@ -42,7 +42,7 @@ if st.button("Submit"):
     st.markdown(f'<div class="response-box">{response}</div>', unsafe_allow_html=True)
 
 # Display history
-st.sidebar.title("History")
+st.sidebar.title("Historial")
 for i, entry in enumerate(st.session_state.history):
     if st.sidebar.button(f'Query {i+1}: {entry["query"]}'):
         st.markdown(f'<div class="response-box">{entry["response"]}</div>', unsafe_allow_html=True)
