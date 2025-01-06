@@ -68,3 +68,22 @@ try:
 
 except Exception as e:
     st.error(f"⚠️ Error al inicializar el cliente de Groq: {e}")
+
+
+
+# Publicidad en el rodapé
+def render_footer():
+    st.markdown(
+        """
+        <hr>
+        <div style="text-align: center; padding: 10px;">
+            🌟 ¿Quieres ver el código fuente de este proyecto en el Repo de Erika Alvares?<br>  
+            🔗 <a href="https://github.com/ea-analisisdatos/LLM-Groq" target="_blank">Repositorio de GitHub</a> | 🌐 <a href="https://www.erikaalvares.es/" target="_blank">Página web personal</a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+# Renderizar publicidad en el rodapé
+render_footer()
